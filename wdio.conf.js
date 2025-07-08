@@ -1,11 +1,20 @@
+const path = require('path');
+const { EventEmitter } = require('events');
+const fsExtra = require('fs-extra');
+const { removeSync } = fsExtra;
+
+
+EventEmitter.defaultMaxListeners = 50;
+
 exports.config = {
     //
     // ====================
     // Runner Configuration
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
-    runner: 'local',
+    runner: "local",
     port: 4723,
+    Path: "/wd/hub",
     //
     // ==================
     // Specify Test Files
@@ -22,6 +31,8 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
+    //"./Test/spec/login.spec.js",
+        "./Test/spec/Test.spec.js"
         // ToDo: define location for spec files here
     ],
     // Patterns to exclude.
@@ -50,14 +61,28 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        // capabilities for local Appium web tests on an Android Emulator
-        platformName: 'Android',
-        browserName: 'Chrome',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
-        'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
-    }],
+    capabilities: [
+        {
+           "platformName": "Android",
+  "appium:deviceName": "moto s",
+  "appium:platformVersion": "15",
+  "appium:automationName": "UiAutomator2",
+  //"appium:app": "/Users/nagasubarayudu/Desktop/FormDAND/App/Form D(T) V_1.0_2025052601.apk",
+  "appium:noReset": true,
+  "appium:fullReset": false,
+  "appium:newCommandTimeout": 1200000,
+  "appium:connectionTimeout": 120000,
+  "appium:sessionOverride": true,
+  "appium:autoGrantPermissions": true,
+  //"appium:appWaitActivity": "*",
+  "appium:adbExecTimeout": 50000,
+  "appium:forceAppLaunch":true,
+  "appium:disableWindowAnimation": true,
+"appium:appPackage": process.env.APP_PACKAGE,
+  "appium:uiautomator2ServerLaunchTimeout": 60000,
+  "appium:uiautomator2ServerInstallTimeout": 60000
+          }
+    ],
 
     //
     // ===================
