@@ -1,5 +1,6 @@
 export async function verify(element) {
   await element?.waitForDisplayed({ timeout: 10000 });
+  console.log(`Verified element: ${element}`);
 } 
 
 
@@ -11,9 +12,12 @@ export async function verifyElement(element) {
   }
 }
 
-export async function verifyAndClick(element) { 
+export async function verifyAndClick(element) {
+   
   await verify(element)
   await element?.click();
+  console.log(`Clicked on element: ${element}`);
+  
 }   
 export async function back() { 
   await driver.executeScript("mobile: pressKey", [{"keycode":4}]);

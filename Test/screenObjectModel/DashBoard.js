@@ -15,7 +15,12 @@ get navigationBar(){return $('//androidx.compose.ui.platform.ComposeView/android
   get logoutClose(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]')}
   get logoutCancel(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[3]')}
   get LogoutConfirmation(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]')}
-
+  get appoitment(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
+  get tasks(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
+  get ehr(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
+  get (){return $('')}
+  get (){return $('')}
+  
   //HomePage selectors
   get upcommingAppoitmentsList(){return $('//android.widget.TextView[@text="Upcoming appointments"]')}
   get AppoitmentSeeAll(){return $('(//android.widget.TextView[@text="See all"])[1]')}
