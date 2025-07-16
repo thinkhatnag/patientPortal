@@ -14,11 +14,12 @@ get navigationBar(){return $('//androidx.compose.ui.platform.ComposeView/android
   get logout(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.view.View/android.view.View[5]/android.view.View')}
   get logoutClose(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[1]')}
   get logoutCancel(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[3]')}
+  get home(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[1]')}
   get LogoutConfirmation(){return $('//android.view.ViewGroup/android.view.View/android.view.View/android.view.View/android.view.View[2]')}
-  get appoitment(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
-  get tasks(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
-  get ehr(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]/android.view.View[1]')}
-  get (){return $('')}
+  get appoitment(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[2]')}
+  get tasks(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[4]')}
+  get ehr(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]')}
+  get appoitmentButton(){return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.widget.Button')}
   get (){return $('')}
   
   //HomePage selectors
@@ -48,35 +49,7 @@ get navigationBar(){return $('//androidx.compose.ui.platform.ComposeView/android
   get allargiesSeeAll(){return $('(//android.widget.TextView[@text="See all"])[2]')}
 
   //
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
-  get (){return $('')}
+ 
 
 }
 export default  new DashBoardPage();
